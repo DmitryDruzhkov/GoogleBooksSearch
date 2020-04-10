@@ -1,0 +1,9 @@
+:host {
+  height: calc(100vh - 228px);
+  display: flex;
+  flex-direction: column;
+}
+
+cdk-virtual-scroll-viewport {
+  height: 100%;
+}

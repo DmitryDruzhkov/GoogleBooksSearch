@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'YouTubeTop'`, () => {
+  it(`should have as title 'GoogleBooksSearch'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('YouTubeTop');
+    expect(app.title).toEqual('GoogleBooksSearch');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('YouTubeTop app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('GoogleBooksSearch app is running!');
   });
 });

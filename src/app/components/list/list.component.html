@@ -1,0 +1,6 @@
+<cdk-virtual-scroll-viewport itemSize="300" class="viewport">
+  <app-book *cdkVirtualFor="let book of (books | async); trackBy: trackByFun" 
+            [book]='book'
+            (changeFavorite)="toggleBook()">
+  </app-book>
+</cdk-virtual-scroll-viewport>

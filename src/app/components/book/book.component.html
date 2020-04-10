@@ -1,0 +1,17 @@
+<mat-card class="book">
+  <div class="header">
+    <div class="cover" [style.background-image]="'url(' + book.thumbnail + ')'"></div>
+    <div class="body">
+      <div class="title"><mat-card-title>{{book.title}}</mat-card-title><mat-checkbox (change)="toggleBook($event)" [checked]="book.checked"></mat-checkbox></div>
+      <div>Авторы: <span *ngFor="let author of book.authors">{{author}}</span></div>
+      <div>Дата публикации: {{book.publishedDate}}</div>
+      <div>Издатель: {{book.publisher}}</div>
+      <div>Страниц: {{book.pageCount}}</div>
+      <div>Язык: {{book.language}}</div>
+    </div>
+  </div>
+  
+  <div class="description">
+    {{book.description}}
+  </div>
+</mat-card>

@@ -1,0 +1,39 @@
+.mat-card {
+  margin-bottom: 32px;
+}
+
+.header {
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.body {
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cover {
+  width: 124px;
+  min-width: 124px;
+  height: 196px;
+  background-size: cover;
+  margin-right: 16px;
+  border-radius: 4px;
+  background-color: #c2c2c2;
+}
+
+.mat-card-header-text {
+  margin: 0;
+}
+
+.mat-card-image {
+  margin-top: 0;
+}
+
+.mat-card-content {
+  display: flex;
+}
